@@ -357,7 +357,7 @@ background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-	background-image: linear-gradient(to bottom right, rgba(178,156,139,1), rgba(139,132,122,1)), url('images/officephoto2.jpg');
+	background-image: linear-gradient(to bottom right, rgba(178,156,139,1), rgba(139,132,122,1)), url('../images/officephoto2.jpg');
 	background-blend-mode: overlay;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
