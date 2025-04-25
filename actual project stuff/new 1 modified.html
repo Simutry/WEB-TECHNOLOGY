@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author"      content="J24041533" />
+	<title> Job Application Page </title>
+	<link href="styles/stylemod.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+	<div class="container">
+			<h1> Job Application Page </h1>
+			<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+<!--Test Field-->
+<!--Job Reference Number-->
+		<div class="forms">
+			<label for="JobID: ">JobID: </label>
+			<input type="text" name="ID" id="JobID"
+			required="required"
+			minlength="5"
+			maxlength="5"
+			pattern="^[a-zA-Z0-9]{5}" title="Enter exactly 5 characters including Number or Alphabet ONLY."
+			placeholder="12345"/>
+		</div>
+		<div class="test">
+			<div class="forms">
+				<label for="FN">First Name: </label>
+				<input type="text" name="FN" id="FN"
+				required="required"
+				maxlength="20"
+				pattern="^[a-zA-Z \s]+$" title="Enter only Letters"
+				placeholder="David"/>
+			</div>
+	<!--Last Name-->
+			<div class="forms">
+					<label for="LN">Last Name: </label>
+					<input type="text" name="LN" id="LN"
+					required="required"
+					maxlength="20"
+					pattern="^[a-zA-Z \s]+$" title="Enter only Letters"
+					placeholder="Smith"/>
+			</div>
+		</div>
+
+		<div class="forms">
+				<label for="DoB">Date of Birth: </label>
+				<input type="text" name="DoB" id="DoB"
+				required="required"
+				maxlength="10"
+				pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" title="dd/mm/yyyy."
+				placeholder="dd/mm/yyyy"
+				/>
+		</div>
+<!--Gender-->
+		<div class="Gen">
+			<fieldset>
+			<div class="Gender">
+			<legend>Gender</legend>
+				<div class="category">
+					<label><input type="radio" name="gender"
+							value="Guy"
+							required="required"/>	
+							Male</label>
+					<label><input type="radio" name="gender"
+							value="Women"
+							required="required"/>
+							Female</label>
+				</div>
+			</div>
+			</fieldset>
+		</div>
+		
+		<div class="forms">
+			<label for="StrAdd">Street Address: </label>
+			<input type="text" name="StrAdd" id="StrAdd"
+			required="required"
+			maxlength="40"
+			pattern="^[a-zA-Z \s]+$" title="Enter only Letters"
+			placeholder="123, Jalan Batu"/>
+		</div>
+		<!--Suburb/Town-->
+		<div class="test">
+			<div class="forms">
+				<label for="Town"required="required">Suburb/Town: </label>
+				<input type="text" name="town" id="town"
+				required="required"
+				maxlength="40"
+				pattern="^[a-zA-Z \s]+$" title="Enter only Letters"
+				placeholder= "Subang"/>
+			</div>
+			<!--PostCode-->
+			<div class="forms">				
+				<label for="PC" id="PClab">Post Code: </label>
+				<input type="text" name="PC" id="PC"
+				maxlength="4"
+				required="required"
+				pattern="^[0-9]{4}$" title="Enter exactly 4 digits"
+				placeholder= "47500"/>
+			</div>
+		</div>
+		<!--State-->
+		<div class="forms">
+			<label for="State" >State: </label>
+				<select name="state" id="state">
+					<option value="Default" required="required"> Please Select</option>
+					<option value="VIC" required="required"> Johor </option>
+					<option value="NSW" required="required"> Kedah </option>
+					<option value="QLD"required="required"> Kelantan </option>
+					<option value="NT" required="required"> Melaka </option>
+					<option value ="WA" required="required"> Negeri Sembilan </option>
+					<option value="SA" required="required"> Pahang </option>
+					<option value="TAS" required="required"> Penang </option>
+					<option value="ACT" required="required"> Perak </option>
+					<option value="ACT" required="required"> Perlis </option>
+					<option value="ACT" required="required"> Selangor </option>
+					<option value="ACT" required="required"> Terengganu </option>
+					<option value="ACT" required="required"> Sabah </option>
+					<option value="ACT" required="required"> Sarawak </option>
+				</select>
+		</div>
+
+				
+		<!--Email Address-->
+		<div class="forms">
+			<label for="EA">Email Address: </label>
+			<input type="email" name="EA" id="EA"
+			required="required"
+			placeholder="123@gmail.com"
+			/>
+		</div>
+		<!--Phone Number-->
+		<div class="forms">
+			<label for="PN">Phone Number: </label>
+			<input type="text" name="PN" id="PN"
+			required="required"
+			pattern="^(?:\s*[0-9]\s*){8,12}$" title="Enter only Numbers and Spaces(8 to 12 characters)"
+			placeholder="010 1234 5566"
+			/>
+		</div>
+			
+		<div class="SL_field">
+			<!--Skill List-->
+			<fieldset>
+				<div class="SL_input">
+					<legend>Skill List</legend>
+					<div class="SL_choice">
+					<label><input type="checkbox" name="skills[]"
+						value="English" checked="checked" />
+						English Fluency
+					</label>
+					</div>
+					<div class="SL_choice">
+					<label><input type="checkbox" name="skills[]"
+						value="Malay" />
+						Malay Fluency
+					</label>
+					</div>
+					<div class="SL_choice">
+					<label><input type="checkbox" name="skills[]"
+						value="Fluency" />
+						Chinese Fluency
+					</label>
+					</div>
+					<div class="SL_choice">
+					<label><input type="checkbox" name="skills[]"
+						value="ComputerLiterate" />
+						Computer Literacy
+					</label>
+					</div>
+					<div class="SL_choice">
+					<label><input type="checkbox" name="skills[]"
+						value="OS" />
+						Other Skills
+					</label>
+					</div>
+				</div>
+			</fieldset>
+		</div>
+		<!--Other Skills-->
+		<div class="OS">
+			<label>Other Skills:</label>
+					<textarea name="OtherSkills" rows="4" cols="20"
+					placeholder="Enter text here">
+					</textarea>
+		</div>
+			<div class="submit">
+				<input type="reset" value="Reset form" id="res"/>
+				<input type="submit" value="Apply" id="sub"/>
+			</div>
+			</form>
+		</div>
+	</div>
+	
+	<div class="side">
+		
+	</div>
+</body>
