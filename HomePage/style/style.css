@@ -365,7 +365,7 @@ header {
 header .container {
   width: 100%;
   margin:auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-top: -20px;
 }
 
@@ -382,7 +382,7 @@ header .logo img {
 	margin: auto;
     margin-top: auto;
 	width: 250.8px;
-	margin-top: 41.4px;
+	margin-top: 56px;
 }
 
 
@@ -394,17 +394,20 @@ header ul.nav-menuA {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 36px;
+  margin-top: 59px;
+  margin-left: 30px;
 }
 
 header ul.nav-menuA li a {
   display: block;
-  padding: 40px 15px;
+  padding: 40px 20px;
   color: #34251F;
   text-decoration: none;
   border-radius: 4px;
   transition: 0.3s;
   font-size: 25px;
+
+  padding-bottom: 53px;
 }
 
 header ul.nav-menuA li a:hover {
@@ -420,17 +423,20 @@ header ul.nav-menuB {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 36px;
+  margin-top: 65px;
+  margin-right: 30px;
 }
 
 header ul.nav-menuB li a {
   display: block;
-  padding: 40px 15px;
+  padding: 40px 20px;
   color: #34251F;
   text-decoration: none;
   border-radius: 4px;
   transition: 0.3s;
   font-size: 25px;
+  
+  padding-bottom: 53px;
 }
 
 header ul.nav-menuB li a:hover {
